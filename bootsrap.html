@@ -1,0 +1,337 @@
+<html lang="en">
+<body style="background-image:url('open2.jpg')">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+$("#c2").hide();
+$("#c3").hide();
+$("#c4").hide();
+$("#c5").hide();
+$("#c6").hide();
+$("#c7").hide();
+$("#c1").show("slow");
+});
+$("#b2").click(function(){
+$("#c1").hide();
+$("#c3").hide();
+$("#c4").hide();
+$("#c5").hide();
+$("#c6").hide();
+$("#c7").hide();
+$("#c2").show("slow");
+});
+$("#b3").click(function(){
+$("#c2").hide();
+$("#c1").hide();
+$("#c4").hide();
+$("#c5").hide();
+$("#c6").hide();
+$("#c7").hide();
+$("#c3").show("slow");
+});
+$("#b4").click(function(){
+$("#c2").hide();
+$("#c3").hide();
+$("#c1").hide();
+$("#c5").hide();
+$("#c6").hide();
+$("#c7").hide();
+$("#c4").show("slow");
+});
+$("#b5").click(function(){
+$("#c2").hide();
+$("#c3").hide();
+$("#c4").hide();
+$("#c1").hide();
+$("#c6").hide();
+$("#c7").hide();
+$("#c5").show("slow");
+});
+$("#b6").click(function(){
+$("#c2").hide();
+$("#c3").hide();
+$("#c4").hide();
+$("#c5").hide();
+$("#c1").hide();
+$("#c7").hide();
+$("#c6").show("slow");
+});
+$("#b7").click(function(){
+$("#c2").hide();
+$("#c3").hide();
+$("#c4").hide();
+$("#c5").hide();
+$("#c6").hide();
+$("#c1").hide();
+$("#c7").show("slow");
+});
+});
+</script>
+<body >
+<div class="container">
+<h1 class="alert alert-info" style="margin-top:20px">7 WONDERS OF THE WORLD</h1>
+<br>
+<div class="dropdown">
+<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Names Of 7 Wonders</button>
+<ul class="dropdown-menu">
+<li><a href="#" id="b1"><center>GREAT WALL OF CHINA</center></a></li>
+<li><a href="#" id="b2"><center>CHRIST THE REDEEMER STATUE</center></a></li>
+<li><a href="#" id="b3"><center>MACHU PICCHU</center></a></li>
+<li><a href="#" id="b4"><center>CHICHEN ITZA</center></a></li>
+<li><a href="#" id="b5"><center>THE ROMAN COLOSSEUM</center></a></li>
+<li><a href="#" id="b6"><center>TAJ MAHAL</center></a></li>
+<li><a href="#" id="b7"><center>PETRA</center></a></li></ul></div></div>
+<br><br>
+<div class="container" style="display:none" id="c1">
+<div class="card">
+<div class="card-header">GREAT WALL OF CHINA</div>
+<div class="card-body">
+<a href="https://en.wikipedia.org/wiki/Great_Wall_of_China" class="card-link">click here</a>
+</div></div></div></div>
+<div class="container" style="display:none" id="c2">
+<div class="card">
+<div class="card-header">CHRIST THE REDEEMER STATUE</div>
+<div class="card-body">
+<a href="https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)" class="card-link">click here</a>
+</div></div></div></div>
+<div class="container" style="display:none" id="c3">
+<div class="card">
+<div class="card-header">MACHU PICCHU</div>
+<div class="card-body">
+<a href="https://en.wikipedia.org/wiki/Machu_Picchu" class="card-link">click here</a>
+</div></div></div></div>
+<div class="container" style="display:none" id="c4">
+<div class="card">
+<div class="card-header">CHICHEN ITZA</div>
+<div class="card-body">
+<a href="https://en.wikipedia.org/wiki/Chichen_Itza" class="card-link">click here</a>
+</div></div></div></div>
+<div class="container" style="display:none" id="c5">
+<div class="card">
+<div class="card-header">THE ROMAN COLOSSEUM</div>
+<div class="card-body">
+<a href="https://en.wikipedia.org/wiki/Colosseum" class="card-link">click here</a>
+</div></div></div></div>
+<div class="container" style="display:none" id="c6">
+<div class="card">
+<div class="card-header">TAJ MAHAL</div>
+<div class="card-body">
+<a href="https://en.wikipedia.org/wiki/Taj_Mahal" class="card-link">click here</a>
+</div></div></div></div>
+<div class="container" style="display:none" id="c7">
+<div class="card">
+<div class="card-header">PETRA</div>
+<div class="card-body">
+<a href="https://en.wikipedia.org/wiki/Petra" class="card-link">click here</a>
+</div></div></div></div>
+<script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<body>
+<div id="div1">GREAT WALL OF CHINA<br>click here</div>
+<div id="div2">The Great Wall of China is an ancient wall in China.<br> ... It was built to protect the north of the empire of China from enemy attacks. <br>It is the longest structure humans have ever built. <br>It is about 21,196 kilometres (13,171 miles) long, 9.1 metres (30 feet) wide and 15 metres (50 feet) high.</div>
+</body>
+<style>
+#div1
+{
+padding:5px;
+background-color:pink;
+text-align:center;
+color:red;
+}
+#div2
+{
+display:none;
+padding:50px;
+background-color:yellow;
+}
+</style>
+<script>
+$(document).ready(function()
+{
+$("#div1").click(function()
+{
+$("#div2").slideDown(3000);
+});
+});
+</script><br><br>
+<body>
+<div id="div3">CHRIST THE REDEEMER STATUE<BR>click here</div>
+<div id="div4">Christ the Redeemer is the largest art deco statue in the world. <br>It is 98 feet tall (not including the 26 foot pedestal), and the arms stretch to 92 feet wide. <br>The statue weighs approximately 635 tonnes. Christ the Redeemer is located in the Tijuca Forest National Forest, at the top of the Corcovado Mountain.</div>
+</body>
+<style>
+#div3
+{
+padding:5px;
+background-color:orange;
+text-align:center;
+color:blue;
+}
+#div4
+{
+display:none;
+padding:50px;
+background-color:lime;
+}
+</style>
+<script>
+$(document).ready(function()
+{
+$("#div3").click(function()
+{
+$("#div4").slideDown(3000);
+});
+});
+</script><br><br>
+<body>
+<div id="div5">MACHU PICCHU<BR>click here</div>
+<div id="div6">Machu Picchu is a pre-Columbian 15th-century Inca site in Peru, in South America. <BR>The Incas built the city on a mountain ridge, 2430m above sea level. ... Machu Picchu is very difficult to get to because it is so high in the mountains. <BR>It has only one way in and a stone wall to protect it.</div>
+</body>
+<style>
+#div5
+{
+padding:5px;
+background-color:pink;
+text-align:center;
+color:red;
+}
+#div6
+{
+display:none;
+padding:50px;
+background-color:yellow;
+}
+</style>
+<script>
+$(document).ready(function()
+{
+$("#div5").click(function()
+{
+$("#div6").slideDown(3000);
+});
+});
+</script><br><br>
+<body>
+<div id="div7">CHICHEN ITZA<BR>click here</div>
+<div id="div8">Chichén Itzá is a large Mayan city famous for a large, pyramid temple built by the Maya civilization. <BR>It is on the Yucatán Peninsula, about 120 km to the east of Mérida. The temple, called Castillo, is about 1 km in diameter. ... <BR>This is the largest pyramid at Chichen Itza, and dedicated to Kukulkan, the Plumed Serpent.</div>
+</body>
+<style>
+#div7
+{
+padding:5px;
+background-color:orange;
+text-align:center;
+color:blue;
+}
+#div8
+{
+display:none;
+padding:50px;
+background-color:lime;
+}
+</style>
+<script>
+$(document).ready(function()
+{
+$("#div7").click(function()
+{
+$("#div8").slideDown(3000);
+});
+});
+</script><br><br>
+</script>
+<body>
+<div id="div9">THE ROMAN COLOSSEUM<BR>click here</div>
+<div id="div10">The Colosseum, originally known as the Flavian Amphitheatre, is a large amphitheatre in the city of Rome.<BR> The construction of the Colosseum started around 70–72 AD and was finished in 80 AD. Emperor Vespasian started the work, and Emperor Titus completed it. <BR>... It is the biggest amphitheatre built by the Roman Empire.</div>
+</body>
+<style>
+#div9
+{
+padding:5px;
+background-color:pink;
+text-align:center;
+color:red;
+}
+#div10
+{
+display:none;
+padding:50px;
+background-color:yellow;
+}
+</style>
+<script>
+$(document).ready(function()
+{
+$("#div9").click(function()
+{
+$("#div10").slideDown(3000);
+});
+});
+</script><br><br>
+<body>
+<div id="div11">TAJ MAHAL<BR>click here</div>
+<div id="div12">The Taj Mahal is a white tomb built in the 16th century by the Mughal emperor, Shah Jahan in memory of his wife, Mumtaz Mahal. <BR>The building is in the city of Agra, Uttar Pradesh. ... It is listed as a UNESCO World Heritage Site,<BR> together with the Agra Fort, 2.5 kilometers away.</div>
+</body>
+<style>
+#div11
+{
+padding:5px;
+background-color:orange;
+text-align:center;
+color:blue;
+}
+#div12
+{
+display:none;
+padding:50px;
+background-color:lime;
+}
+</style>
+<script>
+$(document).ready(function()
+{
+$("#div11").click(function()
+{
+$("#div12").slideDown(3000);
+});
+});
+</script><br><br>
+<body>
+<div id="div13">PETRA<BR>click here</div>
+<div id="div14">Famous for its rock-cut architecture and water conduit system, <BR>Petra is also called the 'Rose City' because of the colour of the stone from which it is carved. It has been a UNESCO World Heritage Site since 1985. <BR>... Petra is a symbol of Jordan, as well as Jordan's most-visited tourist attraction.</div>
+</body>
+<style>
+#div13
+{
+padding:5px;
+background-color:pink;
+text-align:center;
+color:red;
+}
+#div14
+{
+display:none;
+padding:50px;
+background-color:yellow;
+}
+</style><br><br>
+<script>
+$(document).ready(function()
+{
+$("#div13").click(function()
+{
+$("#div14").slideDown(3000);
+});
+});
+</script><br><a href="index.html" class="btn btn-primary" role="button">GO TO WEBSITE</a><br><br>
+
+</body>
+</html>
